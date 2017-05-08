@@ -59,9 +59,6 @@
 					$("img").eq(i).fadeIn(1500).siblings().fadeOut();
 					$(".num li").eq(i).addClass("on").siblings().removeClass("on");
 				}
-				$("input").click(function(){
-					changeImg();
-				});
 				var timer = setInterval(changeImg,2000);
 				$(".num li").mouseover(function(){
 					clearInterval(timer);
@@ -92,6 +89,5 @@
 				<li>5</li>
 			</ul>
 		</div>
-		<input type="button" value="切换" />
 	</body>
 </html>
